@@ -1,14 +1,154 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://asurion.com">
-        <script type="text/javascript">
-            window.location.href = "https://asurion.com"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        If you are not redirected automatically, follow this <a href='https://asurion'>link </a>.
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Construction</title>
+  <meta name="description" content="This site is currently under construction." />
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #111827;
+      --card: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.14);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #60a5fa;
+      --accent2: #22d3ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(96, 165, 250, 0.22), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.18), transparent 30%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      padding: 48px 32px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(96, 165, 250, 0.14);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      color: #dbeafe;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0 auto 24px;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 16px rgba(96, 165, 250, 0.75);
+      animation: pulse 1.8s infinite;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.92rem;
+      color: #94a3b8;
+    }
+
+    .footer a {
+      color: #bfdbfe;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 36px 22px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Website Update</div>
+    <h1>Under Construction</h1>
+    <p>
+      We’re working behind the scenes to launch something better.
+      Please check back soon.
+    </p>
+
+    <div class="status">
+      <span class="dot"></span>
+      <span>Site currently being built</span>
+    </div>
+
+    <div class="footer">
+      © 2026 Your Name or Brand
+    </div>
+  </main>
+</body>
 </html>
